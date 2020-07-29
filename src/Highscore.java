@@ -1,7 +1,4 @@
 import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
 
 public class Highscore {
 
@@ -13,9 +10,6 @@ public class Highscore {
         return instance;
     }
 
-    void createHighscoreList() {
-
-    }
 
     public void checkHighScore(){
         int place = 1;

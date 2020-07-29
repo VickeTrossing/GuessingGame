@@ -1,7 +1,6 @@
 import java.util.Scanner;
 
 public class Menu {
-    //Highscore hs = Highscore.getInstance();
     Scanner scan = new Scanner(System.in);
     public void menu(){
 

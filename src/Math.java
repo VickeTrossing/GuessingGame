@@ -8,7 +8,6 @@ public class Math {
     Random rand = new Random();
     private int yourGuess = 101;
     Highscore hs = Highscore.getInstance();
-    //User refUser = User.getInstance();
 
 
     public void guess(){
