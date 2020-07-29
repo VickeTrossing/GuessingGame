@@ -8,7 +8,7 @@ public class Math {
     Random rand = new Random();
     private int yourGuess = 101;
     Highscore hs = Highscore.getInstance();
-    User refUser = User.getInstance();
+    //User refUser = User.getInstance();
 
 
     public void guess(){
@@ -25,7 +25,6 @@ public class Math {
                 yourGuess = scan.nextInt();
 
                 if(yourGuess == guessNumber){
-                    //refUser.setScore(yourScore);
                     System.out.println("You guessed right! Your score is: " + yourScore);
 
                     if(hs.highscoreList.size() == 0){
@@ -39,6 +38,10 @@ public class Math {
                         for (int i = 0; i < hs.highscoreList.size(); i++){
                             if(yourScore >= hs.highscoreList.get(i)){
                                 hs.highscoreList.add(i, yourScore);
+                                break;
+                            }
+                            else if(yourScore < hs.highscoreList.get(i)){
+                                hs.highscoreList.add(yourScore);
                                 break;
                             }
                         }

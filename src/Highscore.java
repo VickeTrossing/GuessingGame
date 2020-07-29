@@ -25,8 +25,8 @@ public class Highscore {
             System.out.println("No highscores yet!");
         }
 
-        for (int i = 0; i < highscoreList.size(); i++){
-            System.out.println(place + ". " +highscoreList.get(i));
+        for (Integer integer : highscoreList) {
+            System.out.println(place + ". " + integer);
             place++;
         }
         menu.menu();
